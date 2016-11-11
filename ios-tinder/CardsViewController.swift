@@ -26,4 +26,10 @@ class CardsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        let profileViewController = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        profileViewController.profileImage = profileImageView.image
+        self.present(profileViewController, animated: false, completion: nil)
+    }
 }

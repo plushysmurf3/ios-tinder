@@ -29,6 +29,11 @@
                                 <rect key="frame" x="35" y="181" width="304" height="304"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zAk-7Z-lyj" appends="YES" id="p5X-mk-lfA"/>
+                                    <outletCollection property="gestureRecognizers" destination="ISP-gv-Lch" appends="YES" id="UpC-li-3oh"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,6 +45,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zAk-7Z-lyj">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="YVa-CW-RCn"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="ISP-gv-Lch"/>
             </objects>
             <point key="canvasLocation" x="85.5" y="154.5"/>

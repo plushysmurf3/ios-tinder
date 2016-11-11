@@ -9,16 +9,19 @@
 /* Begin PBXBuildFile section */
 		A8067B811DD5674800CDA01F /* DraggableImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8067B801DD5674800CDA01F /* DraggableImageView.xib */; };
 		A8067B831DD568FE00CDA01F /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8067B821DD568FE00CDA01F /* DraggableImageView.swift */; };
+		A8067B851DD57F2A00CDA01F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8067B841DD57F2A00CDA01F /* ProfileViewController.swift */; };
 		A83167AC1DD55F030083EFDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83167AB1DD55F030083EFDE /* AppDelegate.swift */; };
 		A83167AE1DD55F030083EFDE /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83167AD1DD55F030083EFDE /* CardsViewController.swift */; };
 		A83167B11DD55F030083EFDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83167AF1DD55F030083EFDE /* Main.storyboard */; };
 		A83167B31DD55F030083EFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A83167B21DD55F030083EFDE /* Assets.xcassets */; };
 		A83167B61DD55F030083EFDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A83167B41DD55F030083EFDE /* LaunchScreen.storyboard */; };
+		A8E1ED9C1DD587C000460AA5 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E1ED9B1DD587C000460AA5 /* ProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8067B801DD5674800CDA01F /* DraggableImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DraggableImageView.xib; sourceTree = "<group>"; };
 		A8067B821DD568FE00CDA01F /* DraggableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		A8067B841DD57F2A00CDA01F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A83167A81DD55F030083EFDE /* ios-tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A83167AB1DD55F030083EFDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A83167AD1DD55F030083EFDE /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		A83167B21DD55F030083EFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A83167B51DD55F030083EFDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A83167B71DD55F030083EFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E1ED9B1DD587C000460AA5 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A8067B861DD5812100CDA01F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A83167AD1DD55F030083EFDE /* CardsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A8067B871DD5813E00CDA01F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8067B801DD5674800CDA01F /* DraggableImageView.xib */,
+				A8067B821DD568FE00CDA01F /* DraggableImageView.swift */,
+				A8E1ED9B1DD587C000460AA5 /* ProfileViewController.xib */,
+				A8067B841DD57F2A00CDA01F /* ProfileViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		A831679F1DD55F020083EFDE = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +81,10 @@
 		A83167AA1DD55F030083EFDE /* ios-tinder */ = {
 			isa = PBXGroup;
 			children = (
+				A8067B871DD5813E00CDA01F /* Views */,
+				A8067B861DD5812100CDA01F /* ViewControllers */,
 				A83167AB1DD55F030083EFDE /* AppDelegate.swift */,
-				A83167AD1DD55F030083EFDE /* CardsViewController.swift */,
 				A83167AF1DD55F030083EFDE /* Main.storyboard */,
-				A8067B801DD5674800CDA01F /* DraggableImageView.xib */,
-				A8067B821DD568FE00CDA01F /* DraggableImageView.swift */,
 				A83167B21DD55F030083EFDE /* Assets.xcassets */,
 				A83167B41DD55F030083EFDE /* LaunchScreen.storyboard */,
 				A83167B71DD55F030083EFDE /* Info.plist */,
@@ -133,6 +155,7 @@
 				A83167B61DD55F030083EFDE /* LaunchScreen.storyboard in Resources */,
 				A83167B31DD55F030083EFDE /* Assets.xcassets in Resources */,
 				A8067B811DD5674800CDA01F /* DraggableImageView.xib in Resources */,
+				A8E1ED9C1DD587C000460AA5 /* ProfileViewController.xib in Resources */,
 				A83167B11DD55F030083EFDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,6 +169,7 @@
 			files = (
 				A83167AE1DD55F030083EFDE /* CardsViewController.swift in Sources */,
 				A8067B831DD568FE00CDA01F /* DraggableImageView.swift in Sources */,
+				A8067B851DD57F2A00CDA01F /* ProfileViewController.swift in Sources */,
 				A83167AC1DD55F030083EFDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
